@@ -143,10 +143,9 @@ body::after {
 }
 
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+  background-color: #301e49;
 }
-
+/* 
 .glitch {
   animation: paths 5s step-end infinite;
 }
@@ -411,4 +410,4 @@ body::after {
   93% {
     clip-path: none;
   }
-}
+} */
