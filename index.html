@@ -14,16 +14,18 @@
   <body>
     <h1 id="level-title">Press A Key to Start</h1>
     <div class="container">
-      <div type="button" id="green" class="btn green"></div>
-      <div type="button" id="red" class="btn red"></div>
-      <div type="button" id="yellow" class="btn yellow"></div>
-      <div type="button" id="blue" class="btn blue"></div>
-      <div id="start"><p>Start</p></div>
+      <div class="circle">
+        <div type="button" id="green" class="btn glitch layers green"></div>
+        <div type="button" id="red" class="btn glitch layers red"></div>
+        <div type="button" id="yellow" class="btn glitch layers yellow"></div>
+        <div type="button" id="blue" class="btn glitch layers blue"></div>
+        <div id="start"><p>Start</p></div>
+      </div>
     </div>
 
-    <!-- ADDING THE START TEXT SVG -->
+    <!-- ADDING THE "START" TEXT SVG -->
     <!-- SVG filter by https://gist.github.com/codingdudecom/d425ca939906908026a95c5ec0dd70c9 -->
-    <svg>
+    <svg height="0">
       <defs>
         <filter id="stroke">
           <feMorphology
