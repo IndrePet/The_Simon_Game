@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: #011f3f;
+  background-image: url('./src/img/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  padding: 5%;
+  color: #fef2bf;
+}
+
+.container {
+  position: relative;
+  width: 30%;
+  height: 0;
+  padding: 15% 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  background: #a7cd80;
+  overflow: hidden;
+}
+
+#start {
+  width: 50%;
+  height: 0;
+  padding: 25% 0;
+  top: 25%;
+  left: 25%;
+  border-radius: 50%;
+  background: #301e49;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start p {
+  font-family: 'Audiowide', cursive;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #ffedff;
+  filter: url(#stroke) url(#inner-glow) url(#outer-glow);
+}
+
+.btn {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #d95964;
+  top: 0;
+  left: 0;
+}
+
+.green {
+  background-color: #5dd959;
+  top: 0;
+  right: 0;
+}
+
+.blue {
+  background-color: #5061bf;
+  bottom: 0;
+  left: 0;
+}
+
+.yellow {
+  background-color: #d9d15f;
+  bottom: 0;
+  right: 0;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
