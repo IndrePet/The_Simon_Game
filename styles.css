@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   text-align: center;
   background-color: #011f3f;
   background-image: url('./src/img/bg.png');
@@ -37,7 +37,7 @@ body::after {
   width: 0;
   height: 0;
   overflow: hidden;
-  z-index: -1;
+  z-index: -5;
   content: url('./src/img/bg.png');
 }
 
