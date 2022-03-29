@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +8,7 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   text-align: center;
   background-color: #011f3f;
   background-image: url('./src/img/bg.png');
@@ -44,7 +45,7 @@ body::after {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  padding: 5%;
+  padding: 2rem;
   color: #fef2bf;
 }
 
@@ -72,6 +73,7 @@ body::after {
   left: 25%;
   border-radius: 50%;
   background: #301e49;
+  cursor: pointer;
   position: absolute;
   z-index: 1;
   display: flex;
@@ -93,7 +95,7 @@ body::after {
     padding: 17.5% 0;
   }
   #start p {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 @media screen and (min-width: 2000px) {
@@ -101,7 +103,7 @@ body::after {
     font-size: 6rem;
   }
   #start p {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 
@@ -111,17 +113,23 @@ body::after {
   position: absolute;
 }
 
+.btn:hover {
+  cursor: not-allowed;
+}
+
 .game-over {
+  height: 100vh;
+  width: 100vw;
   background-color: red;
   opacity: 0.8;
+  position: absolute;
+  z-index: 5;
 }
 
 .red {
   background-color: #d95964;
   top: 0;
   right: 0;
-
-  /* box-shadow: inset -5px -3px 23px -2px #00000071; */
 }
 
 .green {
@@ -145,7 +153,7 @@ body::after {
 .pressed {
   background-color: #301e49;
 }
-/* 
+
 .glitch {
   animation: paths 5s step-end infinite;
 }
@@ -410,4 +418,4 @@ body::after {
   93% {
     clip-path: none;
   }
-} */
+}
